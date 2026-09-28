@@ -1,26 +1,26 @@
-```markdown
-# 🎮 2048 — Premium Edition
+# 🎮 2048
 
 > Un remake moderno del clásico juego de rompecabezas numérico **2048**, construido con **Python + Pygame**.
-> Con animaciones fluidas, diseño tipo *glassmorphism* y una estética premium inspirada en apps comerciales.
+>
+> Con animaciones fluidas, diseño tipo *glassmorphism* y una estética inspirada en aplicaciones comerciales.
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
-![Pygame](https://img.shields.io/badge/Pygame-2.5%2B-green?style=for-the-badge&logo=pygame&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge\&logo=python\&logoColor=white)
+![Pygame](https://img.shields.io/badge/Pygame-2.5%2B-green?style=for-the-badge\&logo=pygame\&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 ---
 
 ## 📖 Descripción
 
-**2048 Premium Edition** es una reimaginación visual del clásico juego 2048. A diferencia de la versión original web, esta incluye:
+**2048** es una reimaginación visual del clásico juego 2048. A diferencia de la versión web original, esta edición incluye:
 
-- ✨ **Animaciones suaves de deslizamiento** para cada movimiento
-- 🎨 **Diseño glassmorphism** con tarjetas translúcidas y glow
-- 🌈 **Sistema de colores progresivo** que evoluciona con el valor de las fichas
-- 📊 **Panel de estadísticas en tiempo real** (movimientos, tiempo, ficha máxima)
-- 🏆 **Sistema de puntuaciones persistentes** (mejor puntuación guardada en archivo)
-- 🎬 **Pantallas de pausa, victoria y game over** con diseño profesional
-- 🎯 **Barra de progreso** visual hacia el objetivo 2048
+* ✨ **Animaciones suaves de deslizamiento** para cada movimiento.
+* 🎨 **Diseño glassmorphism** con tarjetas translúcidas y efectos de brillo.
+* 🌈 **Sistema de colores progresivo** que evoluciona con el valor de las fichas.
+* 📊 **Panel de estadísticas en tiempo real** con movimientos, tiempo y ficha máxima.
+* 🏆 **Sistema de puntuaciones persistentes**, con la mejor puntuación guardada en un archivo.
+* 🎬 **Pantallas de pausa, victoria y Game Over** con un diseño personalizado.
+* 🎯 **Barra de progreso** visual hacia el objetivo de 2048.
 
 ---
 
@@ -28,28 +28,28 @@
 
 ### Objetivo
 
-Llega a la ficha **2048** deslizando fichas en una cuadrícula de 4×4.
+Llega a la ficha **2048** deslizando las fichas dentro de una cuadrícula de **4 × 4**.
 
 ### Reglas
 
-1. Usa las **flechas** (o **WASD**) para mover todas las fichas en una dirección.
-2. Cuando **dos fichas del mismo número** chocan, se **fusionan** en una sola con el doble de valor.
-3. Después de cada movimiento aparece una nueva ficha (**2** el 90% del tiempo, **4** el 10%).
+1. Usa las **flechas** o **WASD** para mover todas las fichas en una dirección.
+2. Cuando **dos fichas con el mismo número** chocan, se fusionan en una sola con el doble de valor.
+3. Después de cada movimiento válido aparece una nueva ficha: **2** el 90 % de las veces y **4** el 10 %.
 4. El juego termina cuando **no quedan movimientos posibles**.
-5. Ganas al alcanzar la ficha **2048** (puedes seguir jugando para conseguir puntuaciones más altas).
+5. Ganas al alcanzar la ficha **2048**, aunque puedes continuar jugando para conseguir puntuaciones más altas.
 
 ---
 
 ## 🕹️ Controles
 
-| Tecla | Acción |
-|:-----:|:-------|
-| `←` `→` `↑` `↓` | Mover fichas |
-| `A` `D` `W` `S` | Mover fichas (alternativo) |
-| `R` | Reiniciar partida |
-| `ESC` | Pausa / Volver al menú |
-| `ENTER` / `ESPACIO` | Iniciar juego / Confirmar |
-| Click del ratón | Interactuar con botones |
+|        Tecla        | Acción                      |
+| :-----------------: | --------------------------- |
+|   `←` `→` `↑` `↓`   | Mover fichas                |
+|   `A` `D` `W` `S`   | Mover fichas (alternativo)  |
+|         `R`         | Reiniciar partida           |
+|        `ESC`        | Pausar / volver al menú     |
+| `ENTER` / `ESPACIO` | Iniciar juego / confirmar   |
+|   Click del ratón   | Interactuar con los botones |
 
 ---
 
@@ -57,8 +57,8 @@ Llega a la ficha **2048** deslizando fichas en una cuadrícula de 4×4.
 
 ### Requisitos previos
 
-- **Python 3.10 o superior**
-- **pip** (gestor de paquetes de Python)
+* **Python 3.10 o superior**
+* **pip** (gestor de paquetes de Python)
 
 ### Paso 1 — Clonar el repositorio
 
@@ -69,19 +69,27 @@ cd Playgame2048
 
 ### Paso 2 — Instalar dependencias
 
+Puedes instalar Pygame mediante:
+
 ```bash
 pip install pygame
 ```
 
-> 💡 **Recomendación:** usa `pygame-ce` (Community Edition) para mejor rendimiento:
->
-> ```bash
-> pip install pygame-ce
-> ```
->
-> Es un reemplazo directo: tu código sigue usando `import pygame`.
+También puedes utilizar **pygame-ce (Community Edition)**:
+
+```bash
+pip install pygame-ce
+```
+
+> 💡 `pygame-ce` es compatible con el código que utiliza `import pygame`.
 
 ### Paso 3 — Ejecutar el juego
+
+```bash
+python app.py
+```
+
+En algunos sistemas también puedes utilizar:
 
 ```bash
 python3 app.py
@@ -93,35 +101,35 @@ python3 app.py
 
 ### Paleta de colores
 
-El juego utiliza una paleta personalizada con 4 gradientes principales:
+El juego utiliza una paleta personalizada con cuatro gradientes principales:
 
-| Elemento | Gradiente |
-|----------|-----------|
-| **Fondo** | `#0D006E` → `#616E00` |
+| Elemento              | Gradiente             |
+| --------------------- | --------------------- |
+| **Fondo**             | `#0D006E` → `#616E00` |
 | **Tablero y paneles** | `#6E4B00` → `#00236E` |
-| **Fichas** | `#FFBA66` → `#66ABFF` |
-| **Acentos** | `#FF0000` → `#00FFFF` |
+| **Fichas**            | `#FFBA66` → `#66ABFF` |
+| **Acentos**           | `#FF0000` → `#00FFFF` |
 
 ### Colores de fichas por valor
 
-| Valor | Color |
-|-------|-------|
-| 2, 4 | Beige/crema cálido |
-| 8, 16 | Naranja claro → intenso |
-| 32, 64 | Coral → rojo coral |
-| 128, 256, 512 | Rosa → púrpura → índigo |
-| 1024, 2048 | Azul brillante → cyan premium |
-| 4096, 8192+ | Verde esmeralda → dorado → magenta |
+|         Valor | Color                              |
+| ------------: | ---------------------------------- |
+|          2, 4 | Beige / crema cálido               |
+|         8, 16 | Naranja claro → intenso            |
+|        32, 64 | Coral → rojo coral                 |
+| 128, 256, 512 | Rosa → púrpura → índigo            |
+|    1024, 2048 | Azul brillante → cyan              |
+|   4096, 8192+ | Verde esmeralda → dorado → magenta |
 
 ---
 
 ## 📁 Estructura del proyecto
 
-```
+```text
 Playgame2048/
 │
 ├── app.py                        # Código principal del juego
-├── README.md                     # Este archivo
+├── README.md                     # Documentación del proyecto
 ├── 2048_premium_mejor.txt        # Mejor puntuación (autogenerado)
 └── 2048_premium_historial.json   # Historial de partidas (autogenerado)
 ```
@@ -132,71 +140,89 @@ Playgame2048/
 
 ### Arquitectura
 
-- **`Ficha`**: clase que representa una ficha individual con posición visual, animación de spawn, deslizamiento y eliminación.
-- **`Juego2048`**: clase principal que gestiona estado, eventos, lógica y renderizado.
-- **Grid lógico**: matriz 4×4 de valores enteros.
-- **Fichas visuales**: lista independiente que se sincroniza con el grid para permitir animaciones.
+* **`Ficha`**: clase que representa una ficha individual con posición visual, animación de aparición, deslizamiento y eliminación.
+* **`Juego2048`**: clase principal que gestiona el estado del juego, los eventos, la lógica y el renderizado.
+* **Grid lógico**: matriz de valores enteros de **4 × 4**.
+* **Fichas visuales**: lista independiente que se sincroniza con el grid para permitir animaciones fluidas.
 
 ### Sistema de animación
 
-- **Deslizamiento**: interpolación lineal (`lerp`) hacia la posición objetivo.
-- **Spawn**: escala de 0 a 1 con `ease_out_cubic` (160 ms).
-- **Eliminación** (fusiones): escala de 1 a 0 (110 ms).
-- **Sin screen shake**: los movimientos son puramente horizontales/verticales.
+* **Deslizamiento**: interpolación lineal (`lerp`) hacia la posición objetivo.
+* **Spawn**: escala de 0 a 1 mediante `ease_out_cubic` durante aproximadamente 160 ms.
+* **Eliminación**: escala de 1 a 0 durante aproximadamente 110 ms al realizar fusiones.
+* **Sin screen shake**: los movimientos mantienen una experiencia visual limpia, sin sacudidas de pantalla.
 
 ### Persistencia
 
-- Mejor puntuación en `2048_premium_mejor.txt`.
-- Historial en `2048_premium_historial.json`.
+* Mejor puntuación: `2048_premium_mejor.txt`
+* Historial de partidas: `2048_premium_historial.json`
 
 ---
 
 ## 💡 Consejos para ganar
 
-1. **Mantén la ficha más alta en una esquina** y no la muevas de ahí.
+1. **Mantén la ficha de mayor valor en una esquina** y evita moverla innecesariamente.
 2. **Ordena los números de mayor a menor** desde esa esquina.
-3. **Usa solo 2 direcciones** al principio para no romper el orden.
-4. **Rellena primero las filas/columnas de la esquina elegida** antes de expandirte.
-5. **No persigas fusiones grandes**; mantén siempre la esquina limpia.
+3. **Utiliza principalmente dos direcciones** al principio para mantener el orden del tablero.
+4. **Completa primero las filas o columnas cercanas a la esquina elegida** antes de expandirte.
+5. **No persigas fusiones grandes constantemente**; prioriza mantener el tablero organizado.
 
 ---
 
+## 🛠️ Tecnologías utilizadas
 
----
-
-## 🛠️ Tecnologías usadas
-
-- **Python 3.10+**
-- **Pygame / pygame-ce 2.5+**
-- **math**, **random**, **json**
+* **Python 3.10+**
+* **Pygame / pygame-ce 2.5+**
+* **math**
+* **random**
+* **json**
 
 ---
 
 ## 🔮 Roadmap
 
-- [ ] Soporte para deshacer movimiento (undo)
-- [ ] Modo oscuro/claro conmutable
-- [ ] Tamaños de tablero configurables (3×3, 5×5)
-- [ ] Sonidos y música de fondo
-- [ ] Leaderboard local
-- [ ] Modo contrarreloj
-- [ ] IA que juegue sola (modo demo)
+* [ ] Soporte para deshacer movimientos (*undo*)
+* [ ] Modo oscuro / claro conmutable
+* [ ] Tamaños de tablero configurables (3 × 3, 5 × 5)
+* [ ] Sonidos y música de fondo
+* [ ] Leaderboard local
+* [ ] Modo contrarreloj
+* [ ] IA que juegue automáticamente (modo demo)
 
 ---
 
 ## 🤝 Contribuciones
 
+Las contribuciones son bienvenidas.
+
 1. Haz un **fork** del proyecto.
-2. Crea una rama: `git checkout -b feature/nueva-funcionalidad`.
-3. Haz commit: `git commit -m 'Añade nueva funcionalidad'`.
-4. Push: `git push origin feature/nueva-funcionalidad`.
+2. Crea una nueva rama:
+
+```bash
+git checkout -b feature/nueva-funcionalidad
+```
+
+3. Realiza tus cambios y crea un commit:
+
+```bash
+git commit -m "Añade nueva funcionalidad"
+```
+
+4. Envía la rama al repositorio:
+
+```bash
+git push origin feature/nueva-funcionalidad
+```
+
 5. Abre un **Pull Request**.
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la licencia **MIT**.
+
+Consulta el archivo [LICENSE](LICENSE) para obtener más información.
 
 ---
 
@@ -204,20 +230,20 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICE
 
 **Alejandro Mendieta**
 
-- GitHub: [@Alejandro-mendieta](https://github.com/Alejandro-mendieta)
+* GitHub: [@Alejandro-mendieta](https://github.com/Alejandro-mendieta)
 
 ---
 
 ## 🙏 Agradecimientos
 
-- Inspirado en el [2048 original de Gabriele Cirulli](https://github.com/gabrielecirulli/2048).
-- Comunidad de **Pygame** por las herramientas.
+* Inspirado en el [2048 original de Gabriele Cirulli](https://github.com/gabrielecirulli/2048).
+* Agradecimientos a la comunidad de **Pygame** por las herramientas y recursos disponibles.
 
 ---
 
 <div align="center">
 
-**⭐ Si te gustó el proyecto, dale una estrella en GitHub ⭐**
+### ⭐ Si te gustó el proyecto, ¡dale una estrella en GitHub! ⭐
 
 Hecho con ❤️ y Python
 
